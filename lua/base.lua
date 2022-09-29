@@ -6,3 +6,5 @@ require('features.clipboard');
 require('features.windows');
 require('features.encoding');
 require('features.hooks');
+require('features.standard-plugins');
+require('features.smart-format');

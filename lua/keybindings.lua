@@ -5,7 +5,7 @@ vim.g.mapleader = ' '                                             -- Испол�
 
 -- LSP (все горячие клавиши начинаются с g), кроме ховера
 nm('K', '<cmd>lua vim.lsp.buf.hover()<CR>' )                      -- Ховер для объекта
-nm('gf', '<cmd>lua vim.lsp.buf.format({ async=true })<CR>')                 -- Форматировать документ
+--nm('gf', '<cmd>lua vim.lsp.buf.format({ async=true })<CR>')                 -- Форматировать документ
 nm('ga', '<cmd>lua vim.lsp.buf.code_action()<CR>')                -- Действия с кодом
 nm('gR', '<cmd>lua vim.lsp.buf.rename()<CR>')                     -- Переименовать объект
 
