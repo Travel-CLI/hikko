@@ -1,5 +1,5 @@
 <div style="flex" align="center">
-  <img src="https://user-images.githubusercontent.com/101672047/193057577-41948a4f-b8fd-49cf-a576-0112a81b8d56.jpg" alt="Neovim Badge">
+  <img src="https://user-images.githubusercontent.com/101672047/193060978-7bacb770-ee07-4b87-9256-e3749829c4b2.gif" alt="Logo">
 </div>
 
 <div style="flex" align="center">
