@@ -1,13 +1,8 @@
--- Bootstrap packer
-require('bootstrap.lua')
+-- Packer config
+require('plugins_config')
 
 -- Base settings
-require('base/search')
-require('base/tabs')
-require('base/other')
+require('base')
 
 -- Keybindings settings
-require('keys/main')
-require('keys/plugins')
-
-require('packer_install')
+require('keybindings')
