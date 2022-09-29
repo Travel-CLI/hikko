@@ -19,14 +19,41 @@
 - Automatic installation of package manager (`packer`)
 - Automatic installation of lsp for:
   - Python
+  - Rust
   - TypeScript
     - Vue
     - Eslint
     - Prettier
   - JavaScript
-  - Rust
+  - Lua
+  - Neovim Lua
 - Minimal UI overdrive
 - No remapped standard hotkeys
+- Smart formatting (via formatters or with standard method)
+- No default plugins (like NetRW) and other shit
+
+## Installation
+```bash
+
+# Exporting default nvim folder
+export NVIM_DIR="$HOME/.config/nvim";
+
+# Making backup of your old configuration
+[[ -d $NVIM_DIR ]] && mv NVIM_DIR "NVIM_DIR-old";
+
+# Cloning new config
+git clone https://github.com/crackidocky/hikko\
+ $HOME/.config/nvim;
+
+# Downloading packer (plugin manager)
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+After you enter the Neovim, just enter:
+```vim
+:PackerSync
+```
 
 ## Supported Languages
 <div style="flex" align="center">
