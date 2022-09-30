@@ -1,3 +1,4 @@
+--TODO:
 require('utils.bootstrap');
 
 -- Checking plugins on startup
@@ -139,8 +140,15 @@ local function check_plugins()
 	      "hrsh7th/nvim-cmp"
 	    }
 	  }
-    
 
+    -- Todo comments highlight
+    use {
+      'folke/todo-comments.nvim',
+      requires = { 'nvim-lua/plenary.nvim' },
+      config = function ()
+        require('plugins/todo')
+      end
+    }
 	end)
 end
 
