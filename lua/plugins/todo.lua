@@ -10,6 +10,7 @@ require('todo-comments').setup {
     NOTE = { icon = " ", color = "info" },
     LINK = { icon = " ", color = "link" },
     TEST = { icon = " ", color = "test" },
+    IMPL = { icon = " ", color = "impl", alt = { "IMPLEMENT" } },
   },
   gui_style = {
     fg = "NONE",
@@ -22,5 +23,6 @@ require('todo-comments').setup {
     test = {"#9C89B8"},
     link = {"#2364AA"},
     info = {"#7C90A0"},
+    impl = {"#EEB4B3"},
   },
 }

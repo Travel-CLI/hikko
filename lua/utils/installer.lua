@@ -22,6 +22,12 @@ M = {
   nvim_tree     = function() require('plugins_list.nvim-tree').unpack(M.use) end,
   null_ls       = function() require('plugins_list.null-ls').unpack(M.use) end,
   todo_comment  = function() require('plugins_list.todo-comment').unpack(M.use) end,
+  editorconfig =  function() require('plugins_list.editorconfig').unpack(M.use) end,
+  nightfox =  function() require('plugins_list.nightfox').unpack(M.use) end,
+  base16 =  function() require('plugins_list.base16').unpack(M.use) end,
+  tree_sitter_text_objects = function() require('plugins_list.treesitter-text-objects').unpack(M.use) end,
+  twilight = function() require('plugins_list.twilight').unpack(M.use) end,
+  yagc = function() require('plugins_list.yagc').unpack(M.use) end,
 }
 
 return M;
