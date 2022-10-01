@@ -1,4 +1,3 @@
---TODO:
 require('utils.bootstrap');
 
 -- Checking plugins on startup
@@ -7,7 +6,7 @@ local function check_plugins()
 	  use "wbthomason/packer.nvim"
 
 	  -- Color scheme
-	  use 'tanvirtin/monokai.nvim'
+    use 'jacoborus/tender.vim'
 
 	  -- Wakatime
 	  use 'wakatime/vim-wakatime'
