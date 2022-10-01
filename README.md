@@ -31,6 +31,13 @@
 - No remapped standard hotkeys
 - Smart formatting (via formatters or with standard method)
 - No default plugins (like NetRW) and other shit
+- Module installer
+
+<div align="center" style="flex">
+    <img width="1082" alt="image" src="https://user-images.githubusercontent.com/101672047/193386750-42dda9a8-a1f9-4c35-84f8-710c46924ebd.png">
+</div>
+
+
 
 ## Installation
 ```bash
