@@ -1,6 +1,6 @@
 require('fidget').setup({
   text = {
-    spinner = "zip",
+    spinner = "earth",
     commenced = "LSP is loading",
     completed = "LSP is ready!"
   },

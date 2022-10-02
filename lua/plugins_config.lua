@@ -27,7 +27,6 @@ local function check_plugins()
     install['auto_pairs']()
     install['telescope']()
     install['nvim_tree']()
-    install['null_ls']()
     install['todo_comment']()
   end)
 end
