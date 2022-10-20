@@ -28,6 +28,7 @@ local function check_plugins()
     install['telescope']()
     install['nvim_tree']()
     install['todo_comment']()
+    install['monokai']()
   end)
 end
 

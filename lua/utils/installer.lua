@@ -28,6 +28,7 @@ M = {
   tree_sitter_text_objects = function() require('plugins_list.treesitter-text-objects').unpack(M.use) end,
   twilight = function() require('plugins_list.twilight').unpack(M.use) end,
   yagc = function() require('plugins_list.yagc').unpack(M.use) end,
+  monokai = function() require('plugins_list.monokai').unpack(M.use) end,
 }
 
 return M;
