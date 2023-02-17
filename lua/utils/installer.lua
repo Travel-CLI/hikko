@@ -33,6 +33,7 @@ M = {
   yagc                              = function() require('plugins.yagc').unpack(M.use) end,
   monokai                           = function() require('plugins.monokai').unpack(M.use) end,
   kanagawa                          = function() require('plugins.kanagawa').unpack(M.use) end,
+  project                           = function() require('plugins.project').unpack(M.use) end,
 }
 
 return M;
