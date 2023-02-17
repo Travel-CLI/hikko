@@ -29,6 +29,7 @@ local function check_plugins()
     install['nvim_tree']()
     install['todo_comment']()
     install['monokai']()
+    install['kanagawa']()
   end)
 end
 

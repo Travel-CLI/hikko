@@ -29,6 +29,7 @@ M = {
   twilight = function() require('plugins_list.twilight').unpack(M.use) end,
   yagc = function() require('plugins_list.yagc').unpack(M.use) end,
   monokai = function() require('plugins_list.monokai').unpack(M.use) end,
+  kanagawa = function() require('plugins_list.kanagawa').unpack(M.use) end,
 }
 
 return M;
