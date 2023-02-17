@@ -1,4 +1,6 @@
-require('lspkind').init({
+-- Icons for autocompletion
+local function config()
+  require('lspkind').init({
     mode = 'symbol',
     preset = 'codicons',
     symbol_map = {
@@ -28,4 +30,14 @@ require('lspkind').init({
       Operator = "",
       TypeParameter = ""
     },
-})
+  })
+end
+
+return {
+  unpack = function(use)
+    use {
+      'onsails/lspkind-nvim',
+      config = config
+    }
+  end
+}

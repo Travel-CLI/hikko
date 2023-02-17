@@ -1,25 +1,36 @@
--- Включаем подсветку синтаксиса
-require'nvim-treesitter.configs'.setup {
+-- Correctly highlight many languages
+local function config()
+  -- Включаем подсветку синтаксиса
+  require'nvim-treesitter.configs'.setup {
 
-	-- Нужные парсеры
-	ensure_installed = { "c", "lua", "typescript", "vue", "javascript" },
+    -- Нужные парсеры
+    ensure_installed = { "c", "lua", "typescript", "vue", "javascript" },
 
-	-- Устанавливать парсеры синхронно
-	sync_install = false,
+    -- Устанавливать парсеры синхронно
+    sync_install = false,
 
-	-- Подсветка
-	highlight = {
+    -- Подсветка
+    highlight = {
 
-		-- Включить расшируение
-		enable = true,
-		disable = {},
-	},
+      -- Включить расшируение
+      enable = true,
+      disable = {},
+    },
 
-	indent = {
+    indent = {
 
-		-- Включить indent
-		enable = true,
-		disable = {},
-	}
+      -- Включить indent
+      enable = true,
+      disable = {},
+    }
+  }
+end
+
+return {
+  unpack = function(use)
+    use {
+      'nvim-treesitter/nvim-treesitter',
+      config = config
+    }
+  end
 }
-
