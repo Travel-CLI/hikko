@@ -8,6 +8,7 @@ M = {
   wakatime                          = function() require('plugins.wakatime').unpack(M.use) end,
   tender                            = function() require('plugins.tender').unpack(M.use) end,
   packer                            = function() require('plugins.packer').unpack(M.use) end,
+  which_key                         = function() require('plugins.which_key').unpack(M.use) end,
   fidget                            = function() require('plugins.fidget').unpack(M.use) end,
   mason                             = function() require('plugins.mason').unpack(M.use) end,
   trouble                           = function() require('plugins.trouble').unpack(M.use) end,
