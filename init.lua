@@ -1,5 +1,5 @@
 -- Packer config
-require('plugins_config')
+require('manager')
 
 -- Base settings
 require('base')
