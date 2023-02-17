@@ -72,3 +72,11 @@ After you enter the Neovim, just enter:
   <img width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" />
 </div>
 
+# How does plugin manager works
+In directory `lua/plugins/`, you have a lot of files inside which are configurations for plugins. At the end of each file, we return a function, that takes a `use` callback. `use` is a special function provided by [packer](https://github.com/wbthomason/packer.nvim) in order to use the plugin.
+
+If we go to directory `lua/utils/`, then we will see a file called `installer.lua`, in which each file from directory `lua/plugins/` is imported. In the `installer.lua` file, we declare an empty hash table, and also indicate that it will have a certain `M.use` field, which is equal to `nil` for now. Each property inside `M` is a function that will expose the code we need, but for now we don't have a `use` callback.
+
+Now if we go to the `lua/manager.lua` file, we will see that we are using the standard boilerplate for the packer - we are declaring a function inside which `use` will finally become available to us.
+
+We assign `use` to the `M.use` field, and then we start calling the properties we need from the `M` table, which will later expand into the code that is needed to declare to Packer that the plugin is used.
