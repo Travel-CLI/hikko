@@ -9,21 +9,17 @@ local function check_plugins()
     -- Settings a use value
     install.use = use;
 
-    install['packer']()
+    -- Using a pattern with plugins
+    install['patterns_basic']()
+
+    -- Extra plugins
     install['editorconfig']()
     install['wakatime']()
     install['fidget']()
-    install['mason']()
     install['trouble']()
     install['vgit']()
-    install['nvim_cmp']()
-    install['lsp_kind']()
-    install['lualine']()
     install['kommentary']()
-    install['tree_sitter']()
     install['auto_pairs']()
-    install['telescope']()
-    install['nvim_tree']()
     install['todo_comment']()
     install['kanagawa']()
     install['projections']()

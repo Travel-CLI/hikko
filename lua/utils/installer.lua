@@ -35,6 +35,19 @@ M = {
   kanagawa                          = function() require('plugins.kanagawa').unpack(M.use) end,
   project                           = function() require('plugins.project').unpack(M.use) end,
   projections                       = function() require('plugins.projections').unpack(M.use) end,
+
+  -- Patterns
+  patterns_basic                    = function()
+    require('plugins.packer').unpack(M.use)
+    require('plugins.mason').unpack(M.use)
+    require('plugins.nvim-cmp').unpack(M.use)
+    require('plugins.lsp-kind').unpack(M.use)
+    require('plugins.lualine').unpack(M.use)
+    require('plugins.tree-sitter').unpack(M.use)
+    require('plugins.telescope').unpack(M.use)
+    require('plugins.nvim-tree').unpack(M.use)
+  end
+
 }
 
 return M;
