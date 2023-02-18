@@ -26,7 +26,7 @@ local function check_plugins()
     install['nvim_tree']()
     install['todo_comment']()
     install['kanagawa']()
-    install['project']()
+    install['projections']()
   end)
 end
 

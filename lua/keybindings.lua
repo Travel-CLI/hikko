@@ -11,6 +11,7 @@ nm('gR', '<cmd>lua vim.lsp.buf.rename()<CR>')                     -- Rename an o
 -- Telescope
 nm('gd', '<cmd>Telescope lsp_definitions<CR>')                    -- Goto declaration
 nm('<leader>p', '<cmd>Telescope oldfiles<CR>')                    -- Show recent files
+nm('<leader>r', '<cmd>Telescope projections<CR>')                 -- Show projects
 nm('<leader>o', '<cmd>Telescope git_files<CR>')                   -- Search for a file in project
 nm('<leader><C-o>', '<cmd>Telescope find_files<CR>')              -- Search for a file (ignoring git-ignore)
 nm('<leader>b', '<cmd>Telescope git_branches<CR>')                -- Show git branches
