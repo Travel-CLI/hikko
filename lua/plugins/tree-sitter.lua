@@ -4,7 +4,7 @@ local function config()
   require'nvim-treesitter.configs'.setup {
 
     -- Нужные парсеры
-    ensure_installed = { "c", "lua", "typescript", "vue", "javascript" },
+    ensure_installed = { "c", "lua", "typescript", "javascript", "rust" },
 
     -- Устанавливать парсеры синхронно
     sync_install = false,
