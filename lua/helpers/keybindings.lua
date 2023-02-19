@@ -37,4 +37,3 @@ function tm(key, command)
 	map('t', key, command, {noremap = true})
 end
 
-

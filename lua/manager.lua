@@ -21,8 +21,8 @@ local function check_plugins()
     install['kommentary']()
     install['auto_pairs']()
     install['todo_comment']()
-    install['kanagawa']()
     install['projections']()
+    install['gruvbox_material_theme']()
   end)
 end
 

@@ -35,6 +35,8 @@ M = {
   kanagawa                          = function() require('plugins.kanagawa').unpack(M.use) end,
   project                           = function() require('plugins.project').unpack(M.use) end,
   projections                       = function() require('plugins.projections').unpack(M.use) end,
+  aqua_theme                        = function() require('plugins.aquarium-theme').unpack(M.use) end,
+  gruvbox_material_theme            = function() require('plugins.gruvbox-material-theme').unpack(M.use) end,
 
   -- Patterns
   patterns_basic                    = function()

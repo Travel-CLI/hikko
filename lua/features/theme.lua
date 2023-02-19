@@ -2,5 +2,5 @@ require('helpers.alias');
 
 opt.background = 'dark'
 opt.termguicolors = true
-cmd[[colorscheme kanagawa]]
+cmd[[colorscheme gruvbox-material]]
 
