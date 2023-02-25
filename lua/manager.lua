@@ -22,7 +22,7 @@ local function check_plugins()
     install['auto_pairs']()
     install['todo_comment']()
     install['project']()
-    install['gruvbox_material_theme']()
+    install['kanagawa']()
   end)
 end
 

@@ -5,6 +5,7 @@ M.use = nil;
 
 -- Plugins list
 M = {
+  devicons                          = function() require('plugins.devicons').unpack(M.use) end,
   wakatime                          = function() require('plugins.wakatime').unpack(M.use) end,
   tender                            = function() require('plugins.tender').unpack(M.use) end,
   packer                            = function() require('plugins.packer').unpack(M.use) end,
@@ -41,6 +42,7 @@ M = {
   -- Patterns
   patterns_basic                    = function()
     require('plugins.packer').unpack(M.use)
+    require('plugins.devicons').unpack(M.use)
     require('plugins.mason').unpack(M.use)
     require('plugins.nvim-cmp').unpack(M.use)
     require('plugins.lsp-kind').unpack(M.use)
